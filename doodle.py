@@ -66,7 +66,7 @@ doodle_surface_mini = pygame.Surface((input_w, input_h))
 doodle_surface = screen.subsurface((doodle_x, doodle_y, drawing_w, drawing_h))
 gen_surface_mini = pygame.Surface((input_w, input_h))
 gen_surface = screen.subsurface((generated_x, generated_y, drawing_w, drawing_h))
-pygame.display.set_caption('WORK DAMN YOU!!!!')
+pygame.display.set_caption('Doodle Net')
 
 
 def update_mouse(mouse_pos):
