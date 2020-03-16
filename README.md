@@ -42,7 +42,7 @@ If you have not already, download and install the appropriate NVIDIA Drivers, Cu
 **cuDNN** https://developer.nvidia.com/cudnn </br>
 >**Note**: You may need to register an NVIDA Developer account to access the Cuda Toolkit and cuDNN downloads page. </br>
 
-Inside a  python virutual environment, clone this repository and install the libraries in requirements.txt:
+Inside a  python virtual environment, clone this repository and install the libraries in requirements.txt:
 ```
 git clone https://github.com/plasticuproject/DoodleNet.git
 cd DoodleNet
@@ -75,7 +75,8 @@ optional arguments:
   --test             use images in test folder instead of faces
   --sample [SAMPLE]  samples per image, default is 10)
 ```
-You may use the images from the [faces94](https://cswww.essex.ac.uk/mv/allfaces/faces94.html) dataset I have provided, or you may use your own images by deleting the contents of the `faces` directory and placing your own images in there. You may also use the `--test` flag to use the 10 images inside the `test` directory to make sure everything is working, or to debug if you are having issues with VRAM capacity. If you would like to exponentially reduce the amount of images and training data you can run the remove_face.py script.
+You may use the images from the [faces94](https://cswww.essex.ac.uk/mv/allfaces/faces94.html) dataset I have provided, or you may use your own images by deleting the contents of the `faces` directory and placing your own images in there. You may also use the `--test` flag to use the 10 images inside the `test` directory to make sure everything is working, or to debug if you are having issues with VRAM capacity. </br>
+If you would like to exponentially reduce the amount of images and training data you can run the remove_faces.py script. The faces94 data set used contains multiple pictures of individual people. Running this removes the multiples leaving roughly only one picture per person. It greatly reduces the size of the data set.
 
 After generating the training data you can train your model with train.py:
 ```
