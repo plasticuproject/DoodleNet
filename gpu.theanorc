@@ -1,0 +1,17 @@
+[global]
+floatX=float32
+device=cuda
+exception_verbosity=high
+optimizer=fast_compile
+
+[nvcc]
+compiler_bindir=/usr/local/cuda/bin/nvcc
+
+[cuda]
+enabled=True
+root=/usr/local/cuda
+
+[dnn]
+enabled=True
+include_path=/usr/local/cuda/include
+library_path=/usr/local/cuda/lib64
