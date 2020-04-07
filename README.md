@@ -97,6 +97,6 @@ Just run:
 ```
 python doodle.py
 ```
-Right click the mouse and hold to draw on the left side of the screen and watch the results on the right side. Right click the mouse to clear the input.
+Left click the mouse and hold to draw on the left side of the screen and watch the results on the right side. Right click the mouse to clear the input.
 
 
